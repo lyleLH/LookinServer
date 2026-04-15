@@ -220,7 +220,7 @@ static NSString * const CodingKey_DeviceType = @"8";
         // https://github.com/hughkli/Lookin/issues/21
         return nil;
     }
-    UIGraphicsBeginImageContextWithOptions(size, YES, 0.4);
+    UIGraphicsBeginImageContextWithOptions(size, YES, 0);
     [window drawViewHierarchyInRect:window.bounds afterScreenUpdates:YES];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
